@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    {% for wish in wishes %}
+        {% if wish.isPublished %}
+            <div class="card">
+                <p>{{ wish.dateCreated | date('d/m/Y')}}</p>
+                <h3>{{ wish.title }}</h3>
+                <a href="{{ path('wish_list_detail', {'id': wish.id}) }}"><button>Voir</button></a>
+            </div>
+        {% endif %}
+    {% endfor %}
+
+    <a href="{{ path('wish_ajout') }}"><button>Ajouter un souhait</button></a>
+
+{% endblock %}
+
+{% block title %}
+
+{% endblock %}
+

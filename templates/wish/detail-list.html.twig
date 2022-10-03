@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+
+  {% endblock %}
+
+{% block body %}
+
+    {% for label, messages in app.flashes %}
+        {% for message in messages %}
+            <div class="text-success">
+                {{ message }}
+            </div>
+        {% endfor %}
+    {% endfor %}
+
+        
+
+
+
+    <h2>{{ wishDetail.title }}</h2>
+    <p>{{ wishDetail.description }}</p>
+    <p>Publié le {{ wishDetail.dateCreated | date('d/m/Y') }} par {{ wishDetail.author }}</p>
+
+
+{% endblock %}
+
