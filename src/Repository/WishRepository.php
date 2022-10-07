@@ -42,13 +42,12 @@ class WishRepository extends ServiceEntityRepository
 //    /**
 //     * @return Wish[] Returns an array of Wish objects
 //     */
-//    public function findByExampleField($value): array
+//    public function findByCategorie($value): array
 //    {
 //        return $this->createQueryBuilder('w')
-//            ->andWhere('w.exampleField = :val')
+//            ->andWhere('w.categories = :val')
 //            ->setParameter('val', $value)
 //            ->orderBy('w.id', 'ASC')
-//            ->setMaxResults(10)
 //            ->getQuery()
 //            ->getResult()
 //        ;

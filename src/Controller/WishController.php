@@ -91,4 +91,15 @@ class WishController extends AbstractController
 
         ]);
     }
+
+//    public function listeWishParCategorie(
+//        WishRepository $wishRepository,
+//        ApiServices $apiService, $id
+//    ): Response
+//    {
+//        $apiService->ditBonjour();
+//
+//        $wishes = $wishRepository->findByCategorie($id);
+//        return $this->json($wishes, 200);
+//    }
 }
