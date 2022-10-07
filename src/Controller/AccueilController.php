@@ -24,6 +24,8 @@ class AccueilController extends AbstractController
                 "couleurs" => $couleurs
             ]);
     }
+
+
     #[Route('/{id}',
         name: 'accueil_index_avec_id',
     requirements: ["id"=>'\d+'])]

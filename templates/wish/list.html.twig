@@ -6,7 +6,11 @@
         {% if wish.isPublished %}
             <div class="card">
                 <p>{{ wish.dateCreated | date('d/m/Y')}}</p>
-                <h3>{{ wish.title }}</h3>
+                <div class="card_centre">
+                    <h3>{{ wish.title }}</h3>
+                    <p>{{ wish.categories.libelle }}</p>
+                </div>
+
                 <a href="{{ path('wish_list_detail', {'id': wish.id}) }}"><button>Voir</button></a>
             </div>
         {% endif %}

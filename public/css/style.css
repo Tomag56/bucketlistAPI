@@ -56,13 +56,14 @@ header img{
     justify-content: center;
 }
 
-.card{
-    width: 45em;
-    height: 4em;
+.contain .card{
+    width: 65em;
+    height: 6em;
     box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
     margin: 1em 0;
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
     align-items: center;
     padding: 1em;
 }
@@ -78,6 +79,10 @@ header img{
     box-shadow:  20px 20px 60px #bebebe,
     -20px -20px 60px #ffffff;
 
+}
+
+.formWish{
+    width: 80%;
 }
 
 footer{

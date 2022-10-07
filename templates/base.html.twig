@@ -33,6 +33,14 @@
                 <li><a href="{{ path('wish_list') }}">Wish List</a></li>
                 <li><a href="{{ path('_ajout') }}">Ajout Voiture</a></li>
                 <li><a href="{{ path('accueil_about') }}">About Us</a></li>
+                {% if app.user %}
+                    <li><a href="{{ path('wish_ajout') }}">Ajouter Idée</a></li>
+                    <li><a href="{{ path('app_logout') }}">Déconnexion</a></li>
+                {% else  %}
+                    <li><a href="{{ path('app_login') }}">Connexion</a></li>
+                    <li><a href="{{ path('app_register') }}">S'incrire</a></li>
+                {% endif %}
+
             </ul>
         </div>
     </header>
